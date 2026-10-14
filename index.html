@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Projects Hub - 16+ Production IT Projects & AI Code Generator</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+              950: '#1e1b4b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Ambient Glowing Orbs for 3D Glass refraction -->
+  <div class="ambient-glow-1 top-10 left-10"></div>
+  <div class="ambient-glow-2 top-80 right-10"></div>
+  <div class="ambient-glow-1 bottom-60 left-1/4"></div>
+
+  <!-- Top Referral Banner -->
+  <div class="bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-800 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-md flex items-center justify-center gap-2 flex-wrap relative z-20">
+    <span>🎁 <strong>Refer & Earn:</strong> Share your unique link with friends to unlock an instant <strong>50% Discount</strong> on any project!</span>
+    <button onclick="openReferralModal()" class="bg-white/20 hover:bg-white/30 text-white text-xs px-2.5 py-1 rounded-full font-bold underline transition">
+      Get Referral Link & Code
+    </button>
+  </div>
+
+  <!-- Header / Navigation (3D Glass) -->
+  <header class="sticky top-0 z-40 glass3d border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center text-white text-xl shadow-lg shadow-indigo-600/30 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-100 to-indigo-400">
+            Antigravity<span class="text-indigo-500">Hub</span>
+          </span>
+          <p class="text-[10px] text-slate-400 font-medium tracking-wide uppercase">IT Projects Store & AI Studio</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#projects" class="hover:text-indigo-400 transition">Ready Projects</a>
+        <a href="#antigravity-box" class="flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 transition">
+          <i class="fa-solid fa-wand-magic-sparkles text-xs animate-pulse"></i>
+          AI Custom Box
+          <span class="bg-indigo-500/20 text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-indigo-500/30">PRO</span>
+        </a>
+        <a href="#setup-guide" class="hover:text-indigo-400 transition">Setup & PC Guide</a>
+        <a href="#referrals" onclick="openReferralModal(); return false;" class="text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1">
+          <i class="fa-solid fa-tags text-xs"></i> 50% Referral
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <button onclick="document.getElementById('antigravity-box').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Build with AI</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-16 pb-20 overflow-hidden">
+    <!-- Glowing background blur circles -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-72 h-72 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Top Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass3d text-indigo-300 text-xs font-semibold mb-6 border border-white/10">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        16+ Pre-built Verified IT Projects &bull; Instant ZIP Downloads
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-tight">
+        Ready-to-Deploy <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">IT & Web Projects</span> Or Build Custom in Seconds
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Browse 16+ production-ready software source codes with 1-click PC setup guides, or use our <strong>Antigravity AI Engine</strong> to synthesize your exact project requirements instantly.
+      </p>
+
+      <!-- Key Value Pillars -->
+      <div class="mt-8 flex flex-wrap justify-center gap-4 text-xs font-semibold text-slate-300">
+        <div class="flex items-center gap-2 glass3d px-3.5 py-2 rounded-xl border border-white/5">
+          <i class="fa-solid fa-file-zipper text-indigo-400"></i> Instant Clean ZIP Download
+        </div>
+        <div class="flex items-center gap-2 glass3d px-3.5 py-2 rounded-xl border border-white/5">
+          <i class="fa-solid fa-percent text-emerald-400"></i> 50% Referral Discount Program
+        </div>
+        <div class="flex items-center gap-2 glass3d px-3.5 py-2 rounded-xl border border-white/5">
+          <i class="fa-solid fa-laptop-code text-purple-400"></i> 1-Click Run on PC with Instructions
+        </div>
+        <div class="flex items-center gap-2 glass3d px-3.5 py-2 rounded-xl border border-white/5">
+          <i class="fa-solid fa-shield-halved text-amber-400"></i> Commercial & Academic Royalty-Free
+        </div>
+      </div>
+
+      <!-- Quick Search & Filter Bar (3D Glass) -->
+      <div class="mt-10 max-w-3xl mx-auto">
+        <div class="relative flex items-center glass3d border border-white/10 rounded-2xl p-2 shadow-2xl focus-within:border-indigo-400 transition-colors">
+          <i class="fa-solid fa-magnifying-glass text-slate-400 ml-3 mr-2"></i>
+          <input type="text" id="searchInput" oninput="filterProjects()" placeholder="Search by name, category, or tech (e.g. React, Python, E-Commerce, CRM, Scraper)..." class="w-full bg-transparent border-0 text-white placeholder-slate-500 text-sm focus:outline-none py-2 px-1">
+          <button onclick="filterProjects()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shrink-0 shadow-md shadow-indigo-600/30">
+            Search
+          </button>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="mt-4 flex flex-wrap items-center justify-center gap-2" id="categoryPills">
+          <button onclick="setCategory('All')" class="cat-pill active px-4 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-md">All (16)</button>
+          <button onclick="setCategory('Full Stack')" class="cat-pill px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700">Full Stack</button>
+          <button onclick="setCategory('Python / AI')" class="cat-pill px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700">Python / AI</button>
+          <button onclick="setCategory('Web App')" class="cat-pill px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700">Web App</button>
+          <button onclick="setCategory('SaaS')" class="cat-pill px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700">SaaS</button>
+          <button onclick="setCategory('Cloud')" class="cat-pill px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700">Cloud / IoT</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Marketplace Section -->
+  <section id="projects" class="py-12 border-t border-slate-800/80 bg-slate-950/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs uppercase font-extrabold tracking-wider text-indigo-400">Verified Marketplace</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Pre-built IT & Software Catalog</h2>
+          <p class="text-sm text-slate-400 mt-1">All projects come with complete unminified source code, database scripts, and PC setup guides.</p>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-slate-400">
+          <span>Sort by:</span>
+          <select id="sortSelect" onchange="filterProjects()" class="bg-slate-900 border border-slate-800 text-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-indigo-500">
+            <option value="popular">Most Popular</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+        <div class="col-span-full py-12 text-center text-slate-500">
+          <i class="fa-solid fa-spinner fa-spin text-2xl mb-2 text-indigo-500"></i>
+          <p>Loading projects catalog...</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANTIGRAVITY AI BOX SECTION (Custom Requirements Generator) -->
+  <section id="antigravity-box" class="py-16 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-t border-indigo-500/20 relative overflow-hidden">
+    
+    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-bold mb-3">
+          <i class="fa-solid fa-sparkles text-amber-400"></i>
+          Didn't find your exact project? Don't worry!
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Antigravity AI Studio &mdash; <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Custom Project Generator</span>
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-300">
+          Write your project requirements, features, or ideas in the box below. Our built-in Antigravity AI Engine will instantly architect, code, and bundle your customized application into a downloadable ZIP file!
+        </p>
+      </div>
+
+      <!-- Studio Tabs (AI Generator vs Direct Message Box) -->
+      <div class="flex justify-center mb-6">
+        <div class="glass3d p-1.5 rounded-2xl flex items-center gap-2 border border-white/10">
+          <button onclick="switchStudioTab('ai')" id="tabBtnAI" class="bg-indigo-600 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition shadow-md flex items-center gap-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-300"></i>
+            <span>Antigravity AI Generator</span>
+          </button>
+          <button onclick="switchStudioTab('message')" id="tabBtnMsg" class="text-slate-400 hover:text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+            <i class="fa-solid fa-comment-dots text-emerald-400"></i>
+            <span>Leave a Direct Message</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- AI Prompt Box Card (3D Glass) -->
+      <div class="glass3d glass3d-purple rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-white/10">
+        
+        <!-- Premium Tag -->
+        <div class="absolute -top-4 right-8 bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs px-3.5 py-1 rounded-full uppercase tracking-wider shadow-lg flex items-center gap-1.5 z-10">
+          <i class="fa-solid fa-crown"></i> Antigravity Studio
+        </div>
+
+        <!-- PANEL 1: AI GENERATOR -->
+        <div id="panelAI" class="space-y-6">
+          
+          <!-- Project Name & Stack Selection -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                1. Project Name
+              </label>
+              <input type="text" id="aiProjectName" placeholder="e.g. Attendance-Face-Recognition or Crypto-Bot" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                2. Preferred Tech Stack
+              </label>
+              <select id="aiTechStack" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-400 transition">
+                <option value="Full Stack (React + Node.js + Tailwind)">Full Stack (React + Node.js + Tailwind)</option>
+                <option value="Python Full Stack (Python + Django / Flask)">Python Full Stack (Python + Django / Flask)</option>
+                <option value="Modern Single Page Web App (HTML5 + Tailwind + JS)">Modern Single Page Web App (HTML5 + Tailwind + JS)</option>
+                <option value="AI / Next.js SaaS Web App">AI / Next.js SaaS Web App</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Requirements Prompt Textarea -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">
+                3. Describe Your Requirements & Features
+              </label>
+              <span class="text-xs text-indigo-400 font-medium">Be as specific as you like!</span>
+            </div>
+            <textarea id="aiPrompt" rows="4" placeholder="Example: I need a Clinic Management System with patient appointment scheduling, doctor availability calendar, pharmacy invoice generation with GST, and clean dark mode UI..." class="w-full bg-slate-950/70 border border-white/10 rounded-2xl p-4 text-sm text-white focus:outline-none focus:border-indigo-400 transition leading-relaxed"></textarea>
+          </div>
+
+          <!-- Sample Prompts / Quick Fill -->
+          <div>
+            <span class="text-xs text-slate-400 font-medium mr-2">Or click sample prompts:</span>
+            <div class="inline-flex flex-wrap gap-2 mt-1">
+              <button onclick="fillSamplePrompt('Student Attendance System with QR scanner and parent SMS alert')" class="text-[11px] bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10 px-2.5 py-1 rounded-lg transition">
+                🎒 Student QR Attendance
+              </button>
+              <button onclick="fillSamplePrompt('Real-time Crypto Arbitrage trading dashboard with live profit calculators and webhook alerts')" class="text-[11px] bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10 px-2.5 py-1 rounded-lg transition">
+                📈 Crypto Arbitrage Bot
+              </button>
+              <button onclick="fillSamplePrompt('Modern Hotel Room Booking & Banquet Reservation system with invoice PDF export')" class="text-[11px] bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10 px-2.5 py-1 rounded-lg transition">
+                🏨 Hotel Room Reservation
+              </button>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10">
+            <div class="text-xs text-slate-400 flex items-center gap-2">
+              <i class="fa-solid fa-lock text-emerald-400"></i>
+              Includes full executable code + PC run instructions + run.bat
+            </div>
+            
+            <button onclick="generateCustomAIProject()" id="btnGenerateAI" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 text-white font-extrabold text-sm px-8 py-3.5 rounded-2xl shadow-xl shadow-indigo-600/30 transition-all flex items-center justify-center gap-2.5">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Generate Custom Project Now</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- PANEL 2: DIRECT DEVELOPER MESSAGE / INQUIRY FORM -->
+        <div id="panelMsg" class="hidden space-y-6">
+          <div class="bg-indigo-500/10 border border-indigo-500/20 p-4 rounded-2xl flex items-start gap-3">
+            <i class="fa-solid fa-user-tie text-indigo-400 text-xl mt-0.5"></i>
+            <div>
+              <h4 class="text-sm font-bold text-white">Have a specific custom requirement or enterprise project?</h4>
+              <p class="text-xs text-slate-400 mt-1">Leave your details and custom specifications below. Our developer team will review your requirement, prepare a quotation, and reach out immediately.</p>
+            </div>
+          </div>
+
+          <form id="directMsgForm" onsubmit="submitDirectMessage(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Your Name</label>
+                <input type="text" id="msgName" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-400 transition">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">WhatsApp / Phone / Email</label>
+                <input type="text" id="msgContact" required placeholder="e.g. +91 9876543210" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-400 transition">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Approx. Budget</label>
+                <select id="msgBudget" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-400 transition">
+                  <option value="₹1,500 - ₹3,000">₹1,500 - ₹3,000 (Student / Quick Demo)</option>
+                  <option value="₹3,000 - ₹8,000">₹3,000 - ₹8,000 (Full-Stack Custom)</option>
+                  <option value="₹8,000 - ₹25,000+">₹8,000 - ₹25,000+ (Production SaaS / ERP)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Describe What You Want Built</label>
+              <textarea id="msgText" required rows="4" placeholder="Detail your features, database requirements, third-party APIs, deadline, etc..." class="w-full bg-slate-950/70 border border-white/10 rounded-2xl p-4 text-sm text-white focus:outline-none focus:border-indigo-400 transition leading-relaxed"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                <i class="fa-brands fa-whatsapp text-emerald-400"></i> Direct WhatsApp response supported
+              </span>
+              <button type="submit" id="btnSendMsg" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-sm px-8 py-3 rounded-xl shadow-lg shadow-emerald-600/30 transition flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Send Custom Requirements
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Dynamic AI Synthesis Progress Modal / Result Area -->
+        <div id="aiResultArea" class="hidden mt-8 pt-8 border-t border-white/10 space-y-6">
+          
+          <!-- Generation Progress Banner -->
+          <div id="aiProgressBox" class="glass3d rounded-2xl p-5 border border-indigo-500/30">
+            <div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-2">
+              <span id="aiStepText" class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-notch fa-spin text-indigo-400"></i>
+                Antigravity AI is architecting project components...
+              </span>
+              <span id="aiPercent" class="text-indigo-400">45%</span>
+            </div>
+            <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden">
+              <div id="aiProgressBar" class="bg-gradient-to-r from-indigo-500 to-pink-500 h-2 rounded-full transition-all duration-300" style="width: 45%"></div>
+            </div>
+          </div>
+
+          <!-- Generated Code Inspector & Preview -->
+          <div id="aiSuccessCard" class="hidden glass3d glass3d-accent rounded-2xl p-6 space-y-4 border border-emerald-500/30">
+            
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 mb-1">
+                  <i class="fa-solid fa-circle-check"></i> Project Generated Successfully!
+                </span>
+                <h3 class="text-lg font-bold text-white" id="resProjectName">Custom Project</h3>
+                <p class="text-xs text-slate-400" id="resProjectStack">Ready to download and run on your PC</p>
+              </div>
+
+              <!-- Unlock, Demo & Download Action -->
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <button onclick="openLiveDemoModal(null, true)" class="bg-indigo-600/30 hover:bg-indigo-600/40 text-indigo-300 border border-indigo-500/40 font-bold text-xs px-4 py-3 rounded-xl transition flex items-center gap-1.5 shadow-md">
+                  <i class="fa-solid fa-play text-indigo-400"></i> Live Demo
+                </button>
+                <div class="text-right px-2">
+                  <span class="text-xs text-slate-400 line-through">₹2,999</span>
+                  <span class="text-lg font-black text-white ml-1">₹1,499</span>
+                  <div class="text-[10px] text-emerald-400 font-semibold">50% off: ₹749</div>
+                </div>
+                <button onclick="openAICheckoutModal()" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-xs px-6 py-3 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-download"></i> Unlock & Download ZIP
+                </button>
+              </div>
+            </div>
+
+            <!-- Generated Files Manifest Tabs -->
+            <div class="border-t border-white/10 pt-4">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Generated File Tree & Source Code Preview:</span>
+                <span class="text-[11px] text-indigo-400" id="fileCountBadge">4 files packaged</span>
+              </div>
+
+              <div class="bg-slate-950/80 border border-white/10 rounded-xl overflow-hidden font-mono text-xs">
+                <div class="bg-slate-950 px-4 py-2 border-b border-white/10 flex items-center gap-2 text-slate-400" id="fileTabList">
+                  <button class="text-indigo-400 font-bold border-b-2 border-indigo-500 pb-1">index.html</button>
+                  <button class="hover:text-slate-200 pb-1">app.js</button>
+                  <button class="hover:text-slate-200 pb-1">README.md</button>
+                  <button class="hover:text-slate-200 pb-1">run.bat</button>
+                </div>
+                <div class="p-4 max-h-64 overflow-y-auto text-slate-300">
+                  <pre id="codePreviewBlock"><code>&lt;!-- Code preview loading... --&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SETUP & HOW TO RUN ON PC GUIDE SECTION -->
+  <section id="setup-guide" class="py-16 border-t border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-emerald-400">Step-by-Step Instructions</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">How to Download & Run on Your PC</h2>
+        <p class="text-sm text-slate-400 mt-2">Zero headache. Every project is formatted to run locally on your Windows, Mac, or Linux computer in under 60 seconds.</p>
+      </div>
+
+      <!-- 4 Step Visual Flow (3D Glass Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="glass3d glass3d-hover rounded-2xl p-6 relative group border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-black text-lg border border-indigo-500/20 mb-4">
+            1
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Download ZIP File</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Click 'Buy & Download ZIP' on any project or generate your custom code. The .zip downloads directly to your PC.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass3d glass3d-hover rounded-2xl p-6 relative group border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-black text-lg border border-purple-500/20 mb-4">
+            2
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Extract the Archive</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Right-click the downloaded .zip file and select <strong>"Extract All..."</strong> to any folder (e.g. C:\Projects).
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass3d glass3d-hover rounded-2xl p-6 relative group border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center font-black text-lg border border-pink-500/20 mb-4">
+            3
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Check Prerequisites</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Ensure you have <strong>Node.js</strong> or <strong>Python</strong> installed (free 1-minute installs from official sites).
+          </p>
+          <div class="mt-3 flex gap-2">
+            <a href="https://nodejs.org" target="_blank" class="text-[10px] bg-white/5 text-indigo-300 border border-white/10 px-2 py-1 rounded hover:bg-white/10">Node.js</a>
+            <a href="https://python.org" target="_blank" class="text-[10px] bg-white/5 text-indigo-300 border border-white/10 px-2 py-1 rounded hover:bg-white/10">Python</a>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass3d glass3d-hover rounded-2xl p-6 relative group border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black text-lg border border-emerald-500/20 mb-4">
+            4
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Double Click run.bat</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            On Windows, just double click the included <code>run.bat</code> file. It installs packages, starts the server, and opens your browser!
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Terminal Command Snippet Box (Multi-OS) -->
+      <div class="mt-10 max-w-3xl mx-auto glass3d border border-white/10 rounded-2xl p-6">
+        <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4 flex-wrap gap-2">
+          <div class="flex items-center gap-2 text-xs font-bold text-slate-300">
+            <i class="fa-solid fa-terminal text-indigo-400"></i>
+            Run Commands for Your Operating System:
+          </div>
+          <div class="flex items-center gap-1 text-xs">
+            <button onclick="setSetupOS('windows')" id="tabOSWin" class="os-tab-btn bg-indigo-600 text-white px-2.5 py-1 rounded-lg font-bold transition">Windows</button>
+            <button onclick="setSetupOS('mac')" id="tabOSMac" class="os-tab-btn hover:text-white text-slate-400 px-2.5 py-1 rounded-lg transition">macOS</button>
+            <button onclick="setSetupOS('linux')" id="tabOSLinux" class="os-tab-btn hover:text-white text-slate-400 px-2.5 py-1 rounded-lg transition">Linux</button>
+            <button onclick="copyTerminalCommands()" class="text-xs text-indigo-400 hover:text-indigo-300 font-semibold flex items-center gap-1 ml-2">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+          </div>
+        </div>
+        <pre class="font-mono text-xs text-indigo-300 overflow-x-auto p-3 bg-slate-950/80 rounded-xl leading-relaxed border border-white/5"><code id="termCmds"># Windows CMD / PowerShell Setup
+cd your-extracted-project
+
+# 1-Click Launch:
+Double-click run.bat
+
+# Or Manual Command:
+npm install && npm run dev
+# For Python:
+python -m pip install -r requirements.txt && python app.py</code></pre>
+      </div>
+
+      <!-- Frequently Asked Questions (FAQ Accordion) -->
+      <div class="mt-12 max-w-3xl mx-auto space-y-3">
+        <h3 class="text-center text-sm uppercase tracking-wider font-extrabold text-slate-400 mb-4">Frequently Asked Questions</h3>
+        
+        <details class="glass3d border border-white/5 rounded-2xl p-4 group cursor-pointer">
+          <summary class="text-xs font-bold text-white flex justify-between items-center list-none">
+            <span>1. What if 'python' or 'node' is not recognized on my computer?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-[10px] group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Download the official installer from <a href="https://nodejs.org" target="_blank" class="text-indigo-400 underline">nodejs.org</a> or <a href="https://python.org" target="_blank" class="text-indigo-400 underline">python.org</a>. During Python installation on Windows, ensure you check the box <strong>"Add Python to PATH"</strong>.
+          </p>
+        </details>
+
+        <details class="glass3d border border-white/5 rounded-2xl p-4 group cursor-pointer">
+          <summary class="text-xs font-bold text-white flex justify-between items-center list-none">
+            <span>2. Can I use these projects for client freelance work or college submissions?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-[10px] group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Yes! All source codes come with a 100% royalty-free commercial and academic license. You can edit, customize, rebrand, and deploy them anywhere.
+          </p>
+        </details>
+
+        <details class="glass3d border border-white/5 rounded-2xl p-4 group cursor-pointer">
+          <summary class="text-xs font-bold text-white flex justify-between items-center list-none">
+            <span>3. How does the 50% referral discount work?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-[10px] group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Simply click "Get Referral Link" at the top banner, copy your link, and send it to your friends. When they buy, you instantly get a 50% discount coupon applied on your next project. You can also use code <code>DEV50-PREMIUM</code> right away!
+          </p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REFERRAL PROGRAM MODAL (3D Glass) -->
+  <div id="referralModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="glass3d glass3d-accent w-full max-w-xl rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-white/10">
+      
+      <button onclick="closeReferralModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-2xl flex items-center justify-center mx-auto text-xl mb-3">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+        <h3 class="text-2xl font-black text-white">50% Referral Reward Program</h3>
+        <p class="text-xs text-slate-400 mt-1">Share your link. When a friend buys, you instantly get a 50% discount coupon!</p>
+      </div>
+
+      <!-- Referral Link Box -->
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Your Personal Referral Link</label>
+          <div class="flex items-center bg-slate-950/70 border border-white/10 rounded-xl p-2">
+            <input type="text" id="refLinkInput" readonly value="http://localhost:8000/?ref=DEV50-PREMIUM" class="w-full bg-transparent border-0 text-indigo-400 text-xs font-mono focus:outline-none px-2">
+            <button onclick="copyRefLink()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition shrink-0">
+              Copy Link
+            </button>
+          </div>
+        </div>
+
+        <!-- Referral Promo Code -->
+        <div class="bg-slate-950/60 border border-emerald-500/30 rounded-xl p-4 flex items-center justify-between">
+          <div>
+            <div class="text-[10px] text-emerald-400 uppercase font-extrabold tracking-wider">Instant 50% Coupon Code</div>
+            <div class="text-lg font-mono font-black text-white tracking-wider">DEV50-PREMIUM</div>
+          </div>
+          <button onclick="applyDiscountNow('DEV50-PREMIUM')" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-md shadow-emerald-600/30">
+            Use 50% Off
+          </button>
+        </div>
+
+        <!-- Share Buttons -->
+        <div class="pt-2">
+          <span class="block text-xs font-bold text-slate-400 mb-2 text-center">Share with Friends via:</span>
+          <div class="flex justify-center gap-3">
+            <button onclick="shareWhatsApp()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 transition">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </button>
+            <button onclick="shareTelegram()" class="bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 transition">
+              <i class="fa-brands fa-telegram"></i> Telegram
+            </button>
+            <button onclick="copyRefLink()" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-share-nodes"></i> Copy
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHECKOUT / PURCHASE MODAL (3D Glass) -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="glass3d glass3d-purple w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-white/10">
+      
+      <button onclick="closeCheckoutModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="border-b border-white/10 pb-4 mb-6">
+        <span class="text-[10px] text-indigo-400 uppercase font-extrabold tracking-wider">Instant Delivery Checkout</span>
+        <h3 class="text-xl font-bold text-white mt-1" id="checkoutTitle">Project Checkout</h3>
+        <p class="text-xs text-slate-400" id="checkoutTagline">Complete payment to download full source code ZIP.</p>
+      </div>
+
+      <!-- Price Breakdown -->
+      <div class="space-y-3 mb-6 bg-slate-950/60 p-4 rounded-2xl border border-white/10 text-xs">
+        <div class="flex justify-between text-slate-400">
+          <span>Original Price</span>
+          <span id="checkoutOriginalPrice" class="line-through">₹2,499</span>
+        </div>
+        <div class="flex justify-between text-slate-300">
+          <span>Standard Discounted Price</span>
+          <span id="checkoutBasePrice">₹999</span>
+        </div>
+        <div id="referralDiscountRow" class="hidden flex justify-between text-emerald-400 font-bold">
+          <span>50% Referral Discount</span>
+          <span id="checkoutDiscountAmt">-₹500</span>
+        </div>
+        <div class="border-t border-white/10 pt-2 flex justify-between text-sm font-black text-white">
+          <span>Total Payable Amount</span>
+          <span id="checkoutFinalPrice" class="text-indigo-400 text-lg">₹999</span>
+        </div>
+      </div>
+
+      <!-- Coupon Code Input -->
+      <div class="mb-6">
+        <label class="block text-xs font-bold text-slate-300 mb-1">Have a Referral / 50% Coupon Code?</label>
+        <div class="flex gap-2">
+          <input type="text" id="couponCodeInput" placeholder="Try DEV50-PREMIUM" class="w-full bg-slate-950/70 border border-white/10 rounded-xl px-3 py-2 text-xs text-white uppercase font-mono focus:outline-none focus:border-indigo-400">
+          <button onclick="applyCoupon()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-4 py-2 rounded-xl transition shrink-0 shadow-md shadow-indigo-600/30">
+            Apply
+          </button>
+        </div>
+        <p id="couponMsg" class="text-[11px] mt-1.5 hidden"></p>
+      </div>
+
+      <!-- Payment Methods & Dynamic UPI QR -->
+      <div class="space-y-4">
+        <label class="block text-xs font-bold text-slate-300">Instant UPI Payment QR Code:</label>
+        
+        <div class="p-4 rounded-2xl glass3d border border-indigo-500/30 text-center flex flex-col items-center">
+          <span class="text-[10px] uppercase font-bold text-slate-400 mb-1">Scan & Pay via any UPI App</span>
+          <div class="bg-white p-2 rounded-xl inline-block shadow-md my-1">
+            <img id="checkoutQRImg" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=upi://pay?pa=devprojects@upi%26pn=AntigravityProjects%26am=999%26cu=INR" alt="UPI QR Code" class="w-36 h-36 mx-auto object-contain">
+          </div>
+          <div class="text-xs font-mono text-emerald-400 font-bold mt-1" id="checkoutQRAmt">₹999</div>
+          <div class="flex items-center gap-3 mt-2 text-[10px] text-slate-400">
+            <span class="flex items-center gap-1"><i class="fa-solid fa-mobile-screen text-indigo-400"></i> GPay</span>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-bolt text-purple-400"></i> PhonePe</span>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-wallet text-sky-400"></i> Paytm</span>
+          </div>
+        </div>
+
+        <button onclick="completePurchaseAndDownload()" id="btnPayNow" class="w-full mt-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-sm py-3.5 rounded-xl shadow-xl shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+          <i class="fa-solid fa-check"></i>
+          <span>Verify Payment & Download ZIP Instantly</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS & SETUP MODAL (3D Glass) -->
+  <div id="detailsModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="glass3d w-full max-w-3xl rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto border border-white/10">
+      
+      <button onclick="closeDetailsModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="space-y-6">
+        <div>
+          <span id="detailCategory" class="text-xs font-bold text-indigo-400 uppercase tracking-wider bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">Full Stack</span>
+          <h2 id="detailTitle" class="text-2xl font-black text-white mt-2">Project Title</h2>
+          <p id="detailTagline" class="text-sm text-slate-400 mt-1">Short overview</p>
+        </div>
+
+        <!-- Tech Stack Badges -->
+        <div id="detailTechStack" class="flex flex-wrap gap-2"></div>
+
+        <!-- Description -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Project Overview</h4>
+          <p id="detailDescription" class="text-sm text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <!-- Key Features List -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Key Features Included</h4>
+          <ul id="detailFeatures" class="space-y-2 text-xs text-slate-300"></ul>
+        </div>
+
+        <!-- Setup Instructions in modal -->
+        <div class="bg-slate-950/60 p-4 rounded-2xl border border-white/10">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-laptop-code"></i> How to Run this Project on PC:
+          </h4>
+          <div id="detailSetupSteps" class="space-y-2 text-xs text-slate-300 font-mono"></div>
+        </div>
+
+        <!-- Bottom Action Bar -->
+        <div class="border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <span id="detailOriginalPrice" class="text-xs text-slate-400 line-through">₹2,499</span>
+            <span id="detailPrice" class="text-xl font-black text-white ml-2">₹999</span>
+            <div class="text-[11px] text-emerald-400 font-bold">50% Referral Discount Eligible</div>
+          </div>
+          <button id="btnDetailBuy" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm px-8 py-3 rounded-xl shadow-lg shadow-indigo-600/30 transition-all flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-zipper"></i> Buy & Download ZIP
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIVE INTERACTIVE DEMO SANDBOX MODAL (3D Glass) -->
+  <div id="demoModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-2 sm:p-4">
+    <div class="glass3d w-full max-w-6xl h-[92vh] rounded-3xl p-4 sm:p-6 shadow-2xl flex flex-col border border-white/10 relative">
+      
+      <!-- Top Bar: Viewport Toggles & Actions -->
+      <div class="flex items-center justify-between pb-3 mb-3 border-b border-white/10 flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <h3 id="demoTitle" class="text-sm font-bold text-white">Live Interactive Demo</h3>
+        </div>
+
+        <!-- Viewport Switcher -->
+        <div class="flex items-center gap-1 glass3d p-1 rounded-xl border border-white/5 text-xs">
+          <button onclick="setViewport('desktop')" id="btnViewDesktop" class="viewport-btn bg-indigo-600 text-white px-3 py-1 rounded-lg font-semibold flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-desktop"></i> Desktop
+          </button>
+          <button onclick="setViewport('tablet')" id="btnViewTablet" class="viewport-btn text-slate-400 hover:text-white px-3 py-1 rounded-lg font-semibold flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-tablet-screen-button"></i> Tablet
+          </button>
+          <button onclick="setViewport('mobile')" id="btnViewMobile" class="viewport-btn text-slate-400 hover:text-white px-3 py-1 rounded-lg font-semibold flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-mobile-screen"></i> Mobile
+          </button>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2">
+          <button id="demoExternalBtn" class="bg-white/10 hover:bg-white/20 text-white text-xs px-3 py-1.5 rounded-xl transition flex items-center gap-1">
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Open in New Tab
+          </button>
+          <button onclick="closeLiveDemoModal()" class="text-slate-400 hover:text-white text-lg px-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Iframe Sandbox Container -->
+      <div class="flex-1 w-full flex justify-center items-center overflow-hidden bg-slate-950/80 rounded-2xl border border-white/5">
+        <div id="iframeWrapper" class="w-full h-full transition-all duration-300 mx-auto shadow-2xl">
+          <iframe id="demoIframe" class="w-full h-full rounded-2xl border-0 bg-white" sandbox="allow-scripts allow-forms allow-same-origin allow-modals"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification (3D Glass) -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 glass3d px-5 py-3 rounded-2xl border border-indigo-400/30 flex items-center gap-3 text-sm font-medium">
+    <i id="toastIcon" class="fa-solid fa-check text-emerald-400"></i>
+    <span id="toastMsg">Action completed!</span>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div>
+        <p>&copy; 2026 Antigravity Projects Hub & AI Studio. All source codes ready-to-run.</p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#setup-guide" class="hover:text-slate-300">PC Setup Guide</a>
+        <a href="#referrals" onclick="openReferralModal(); return false;" class="hover:text-slate-300">50% Referral Program</a>
+        <a href="#antigravity-box" class="hover:text-slate-300">Antigravity AI Studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side ZIP & Project Data for 100% Serverless GitHub Pages support -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="projects_data.js"></script>
+  
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

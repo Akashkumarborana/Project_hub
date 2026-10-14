@@ -1,0 +1,149 @@
+/* style.css - Ultra Modern 3D Glassmorphism Theme for Antigravity Projects Hub */
+
+/* --- User's Signature 3D Glass Effect --- */
+.glass3d { 
+  --filter-glass3d: blur(32px) brightness(0.9) saturate(2.2); 
+  --color-glass3d: hsl(220 40% 10% / 0.45); 
+  --noise-glass3d: url("https://www.transparenttextures.com/patterns/egg-shell.png"); 
+
+  position: relative; 
+  z-index: 4; 
+  box-shadow:  
+    0 0 0.75px hsl(205 20% 10% / 0.2), 
+    0.7px 0.8px 1.2px -0.4px hsl(205 20% 10% / 0.1), 
+    1.3px 1.5px 2.2px -0.8px hsl(205 20% 10% / 0.1), 
+    2.3px 2.6px 3.9px -1.2px hsl(205 20% 10% / 0.1), 
+    3.9px 4.4px 6.6px -1.7px hsl(205 20% 10% / 0.1), 
+    6.5px 7.2px 10.9px -2.1px hsl(205 20% 10% / 0.1), 
+    8px 9px 14px -2.5px hsl(205 20% 10% / 0.2); 
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.glass3d::before { 
+  content: ""; 
+  position: absolute; 
+  inset: 0; 
+  pointer-events: none; 
+  border-radius: inherit; 
+  overflow: hidden; 
+  z-index: 3; 
+  
+  -webkit-backdrop-filter: var(--filter-glass3d); 
+  backdrop-filter: var(--filter-glass3d); 
+  background-color: var(--color-glass3d); 
+  background-image: var(--noise-glass3d); 
+  background-size: 100px; 
+  background-repeat: repeat; 
+}
+
+.glass3d::after { 
+  content: ""; 
+  position: absolute; 
+  inset: 0; 
+  pointer-events: none; 
+  border-radius: inherit; 
+  overflow: hidden; 
+  z-index: 5; 
+  
+  box-shadow: 
+    inset 2px 2px 1px -3px hsl(205 20% 90% / 0.8), 
+    inset 4px 4px 2px -6px hsl(205 20% 90% / 0.3), 
+    inset 1.5px 1.5px 1.5px -0.75px hsl(205 20% 90% / 0.25), 
+    inset 1.5px 1.5px 0.25px hsl(205 20% 90% / 0.05), 
+    inset 0 0 0.25px 0.5px hsl(205 20% 90% / 0.05); 
+}
+
+.glass3d > * { 
+  position: relative; 
+  z-index: 6; 
+}
+
+/* Glass 3D Hover elevation for interactive cards */
+.glass3d-hover:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 
+    0 15px 35px -5px rgba(99, 102, 241, 0.25),
+    0 0 20px rgba(139, 92, 246, 0.2),
+    inset 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* Cyan / Deep Accent Glass variant */
+.glass3d-accent {
+  --color-glass3d: hsl(195 80% 8% / 0.5);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* Violet / Purple Accent Glass variant */
+.glass3d-purple {
+  --color-glass3d: hsl(265 70% 10% / 0.45);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+/* 3D Glowing Ambient Mesh Background */
+body {
+  background-color: #07090e;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(99, 102, 241, 0.18) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, rgba(217, 70, 239, 0.16) 0px, transparent 50%),
+    radial-gradient(at 30% 60%, rgba(6, 182, 212, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 85%, rgba(139, 92, 246, 0.2) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Floating ambient glowing orbs */
+.ambient-glow-1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, rgba(0,0,0,0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  animation: floatOrb 12s ease-in-out infinite alternate;
+}
+
+.ambient-glow-2 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.2) 0%, rgba(0,0,0,0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  animation: floatOrb 16s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.1); }
+  100% { transform: translate(-30px, 40px) scale(0.95); }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Category pills styling */
+.cat-pill.active {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+  color: #ffffff !important;
+  border-color: rgba(165, 180, 252, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* Code block font styling */
+pre code {
+  font-family: 'JetBrains Mono', Consolas, Monaco, 'Courier New', monospace;
+}
